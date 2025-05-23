@@ -21,7 +21,7 @@ Pseudocode
 let computerChoice;
 
 function getComputerChoice(){
-    ranNumber = Math.floor(3 * Math.random()); 
+    let ranNumber = Math.floor(3 * Math.random()); 
     if (ranNumber == 0){
         computerChoice = "rock";
     } else if (ranNumber == 1){
@@ -102,6 +102,11 @@ function playGame(){
         getComputerChoice();
         playRound(playerChoice, computerChoice);
     } 
+    if (playerScore > computerScore){
+        console.log("You Win!")
+    } else{
+        console.log("You Lose!")
+    }
 }
 
 playGame();
