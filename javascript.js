@@ -45,7 +45,7 @@ Pseudocode
 let playerChoice;
 
 function getPlayerChoice(){
-    playerChoice = prompt("Select rock, paper or scissors");
+    playerChoice = prompt("Select rock, paper or scissors").toLowerCase();
 }
 
 getPlayerChoice();
