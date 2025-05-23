@@ -83,8 +83,18 @@ function playRound(playerChoice, computerChoice){
     } else if (playerChoice == "scissors" && computerChoice == "rock"){
         result = "Lose";
     }
+
+    if (result == "Win"){
+        playerScore += 1;
+    } else if (result == "Lose"){
+        computerScore += 1;
+    } else {
+        return;
+    }
 }
 
 playRound(playerChoice, computerChoice)
 console.log(result)
+console.log(playerScore)
+console.log(computerScore)
 
