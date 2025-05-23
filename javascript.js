@@ -93,8 +93,27 @@ function playRound(playerChoice, computerChoice){
     }
 }
 
-playRound(playerChoice, computerChoice)
-console.log(result)
 console.log(playerScore)
 console.log(computerScore)
 
+
+/*
+Pseudocode
+- function to play 5 rounds
+- results of each game a stored in this function
+- compares the results to declare a winner
+*/
+
+function playGame(){
+    for (let i = 0; i < 5; i ++){
+        if (i < 5){
+            getPlayerChoice();
+            getComputerChoice();
+            playRound
+        } else {
+            return
+        }
+    }
+}
+
+playGame();
