@@ -17,10 +17,25 @@ function getComputerChoice(){
     } else if (ranNumber == 1){
         computerChoice = "paper";
     } else if (ranNumber == 2){
-        computerChoice = "scissor";
+        computerChoice = "scissors";
     }
 }
 
 getComputerChoice();
 console.log(computerChoice);
 
+/*
+Pseudocode
+- variable to store player choice
+- prompt to ask player for choice
+- function to update variable to save player choice
+*/
+
+let playerChoice;
+
+function getPlayerChoice(){
+    playerChoice = prompt("Select rock, paper or scissors");
+}
+
+getPlayerChoice();
+console.log(playerChoice);
