@@ -70,6 +70,18 @@ function playRound(playerChoice, computerChoice){
         result = "Lose";
     } else if (playerChoice == "rock" && computerChoice == "scissors"){
         result = "Win";
+    } else if (playerChoice == "paper" && computerChoice == "paper"){
+        result = "Draw";
+    } else if (playerChoice == "paper" && computerChoice == "rock"){
+        result = "Win";
+    } else if (playerChoice == "paper" && computerChoice == "scissors"){
+        result = "Lose";
+    } else if (playerChoice == "scissors" && computerChoice == "scissors"){
+        result = "Draw";
+    } else if (playerChoice == "scissors" && computerChoice == "paper"){
+        result = "Win";
+    } else if (playerChoice == "scissors" && computerChoice == "rock"){
+        result = "Lose";
     }
 }
 
