@@ -1,12 +1,22 @@
 console.log("Hello World!")
 
 /*
+Pseudocode
+- one variable for player score
+- one variable for computer score
+- both variables initialised at 0
+*/
+
+let playerScore = 0;
+let computerScore = 0;
+
+
+/*
 Pseudocode 
 - variable to store computer choice
 - function to randomly choose one of the 3 options
 - update variable to contain the selected choice
 */
-
 
 let computerChoice;
 
@@ -24,6 +34,7 @@ function getComputerChoice(){
 getComputerChoice();
 console.log(computerChoice);
 
+
 /*
 Pseudocode
 - variable to store player choice
@@ -40,14 +51,5 @@ function getPlayerChoice(){
 getPlayerChoice();
 console.log(playerChoice);
 
-/*
-Pseudocode
-- one variable for player score
-- one variable for computer score
-- both variables initialised at 0
-*/
-
-let playerScore = 0;
-let computerScore = 0;
 
 
