@@ -31,9 +31,6 @@ function getComputerChoice(){
     }
 }
 
-getComputerChoice();
-console.log(computerChoice);
-
 
 /*
 Pseudocode
@@ -48,8 +45,6 @@ function getPlayerChoice(){
     playerChoice = prompt("Select rock, paper or scissors").toLowerCase();
 }
 
-getPlayerChoice();
-console.log(playerChoice);
 
 
 /*
@@ -92,9 +87,6 @@ function playRound(playerChoice, computerChoice){
         return;
     }
 }
-
-console.log(playerScore)
-console.log(computerScore)
 
 
 /*
