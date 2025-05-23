@@ -11,7 +11,7 @@ Pseudocode
 let computerChoice;
 
 function getComputerChoice(){
-    computerChoice = Math.random();
+    computerChoice = Math.floor(Math.random());
 }
 
 getComputerChoice();
