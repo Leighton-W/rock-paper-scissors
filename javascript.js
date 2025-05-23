@@ -52,4 +52,27 @@ getPlayerChoice();
 console.log(playerChoice);
 
 
+/*
+Pseudocode
+- function to start game
+- collects player and computer inputs
+- compares the inputs
+- announces a winner
+- increase score for winner
+*/
+
+let result;
+
+function playRound(playerChoice, computerChoice){
+    if (playerChoice == "rock" && computerChoice == "rock"){
+        result = "Draw";
+    } else if (playerChoice == "rock" && computerChoice == "paper"){
+        result = "Lose";
+    } else if (playerChoice == "rock" && computerChoice == "scissors"){
+        result = "Win";
+    }
+}
+
+playRound(playerChoice, computerChoice)
+console.log(result)
 
