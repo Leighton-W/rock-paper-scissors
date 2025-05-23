@@ -106,14 +106,10 @@ Pseudocode
 
 function playGame(){
     for (let i = 0; i < 5; i ++){
-        if (i < 5){
-            getPlayerChoice();
-            getComputerChoice();
-            playRound
-        } else {
-            return
-        }
-    }
+        getPlayerChoice();
+        getComputerChoice();
+        playRound(playerChoice, computerChoice);
+    } 
 }
 
 playGame();
