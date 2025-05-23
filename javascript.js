@@ -39,3 +39,15 @@ function getPlayerChoice(){
 
 getPlayerChoice();
 console.log(playerChoice);
+
+/*
+Pseudocode
+- one variable for player score
+- one variable for computer score
+- both variables initialised at 0
+*/
+
+let playerScore = 0;
+let computerScore = 0;
+
+
