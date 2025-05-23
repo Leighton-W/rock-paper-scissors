@@ -11,7 +11,14 @@ Pseudocode
 let computerChoice;
 
 function getComputerChoice(){
-    computerChoice = Math.floor(3 * Math.random()); 
+    ranNumber = Math.floor(3 * Math.random()); 
+    if (ranNumber == 0){
+        computerChoice = "rock";
+    } else if (ranNumber == 1){
+        computerChoice = "paper";
+    } else if (ranNumber == 2){
+        computerChoice = "scissor";
+    }
 }
 
 getComputerChoice();
