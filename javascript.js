@@ -105,3 +105,5 @@ function playGame(){
 }
 
 playGame();
+console.log(playerScore);
+console.log(computerScore);
