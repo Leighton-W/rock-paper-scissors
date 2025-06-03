@@ -101,6 +101,11 @@ const rockButton = document.createElement("button");
 rockButton.textContent = "Rock";
 document.body.appendChild(rockButton);
 
+rockButton.addEventListener("click", () => {
+    alert("You Picked Rock!");
+    
+})
+
 const paperButton = document.createElement("button");
 paperButton.textContent = "Paper";
 document.body.appendChild(paperButton);
