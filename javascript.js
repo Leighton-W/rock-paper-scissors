@@ -97,6 +97,14 @@ Pseudocode
 */
 
 
-const button = document.createElement("button");
-button.textContent = "Rock";
-document.body.appendChild(button);
+const rockButton = document.createElement("button");
+rockButton.textContent = "Rock";
+document.body.appendChild(rockButton);
+
+const paperButton = document.createElement("button");
+paperButton.textContent = "Paper";
+document.body.appendChild(paperButton);
+
+const scissorsButton = document.createElement("button");
+scissorsButton.textContent = "Scissors";
+document.body.appendChild(scissorsButton);
