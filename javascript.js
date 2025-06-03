@@ -102,10 +102,13 @@ rockButton.textContent = "Rock";
 document.body.appendChild(rockButton);
 
 rockButton.addEventListener("click", () => {
-    alert("You Picked Rock!");
     playerChoice = "rock";
+    console.log(playerChoice);
     getComputerChoice();
-    playRound();
+    console.log(computerChoice);
+    playRound(playerChoice, computerChoice);
+    console.log(playerScore);
+    console.log(computerScore);
 })
 
 const paperButton = document.createElement("button");
