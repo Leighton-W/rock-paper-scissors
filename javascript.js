@@ -97,3 +97,6 @@ Pseudocode
 */
 
 
+const button = document.createElement("button");
+button.textContent = "Rock";
+document.body.appendChild(button);
