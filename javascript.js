@@ -96,19 +96,4 @@ Pseudocode
 - compares the results to declare a winner
 */
 
-function playGame(){
-    for (let i = 0; i < 5; i ++){
-        getPlayerChoice();
-        getComputerChoice();
-        playRound(playerChoice, computerChoice);
-    } 
-    if (playerScore > computerScore){
-        console.log("You Win!")
-    } else{
-        console.log("You Lose!")
-    }
-}
 
-playGame();
-console.log(playerScore);
-console.log(computerScore);
