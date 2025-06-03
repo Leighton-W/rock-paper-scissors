@@ -103,7 +103,9 @@ document.body.appendChild(rockButton);
 
 rockButton.addEventListener("click", () => {
     alert("You Picked Rock!");
-    
+    playerChoice = "rock";
+    getComputerChoice();
+    playRound();
 })
 
 const paperButton = document.createElement("button");
