@@ -106,6 +106,20 @@ const cScore = document.createElement("p");
 cScore.textContent = "Computer Score is: " + computerScore;
 score.appendChild(cScore);
 
+function gameResult(){
+    if (playerScore + computerScore == 5 && playerScore > computerScore){
+        playerScore = 0;
+        computerScore = 0;
+        alert("Congratulations! You Win.")
+    }else if(playerScore + computerScore == 5 && playerScore < computerScore){
+        playerScore = 0;
+        computerScore = 0;
+        alert("Sorry, You Lose.")
+    }else{
+        return
+    }
+}
+
 const rockButton = document.createElement("button");
 rockButton.textContent = "Rock";
 document.body.appendChild(rockButton);
@@ -114,9 +128,10 @@ rockButton.addEventListener("click", () => {
     playerChoice = "rock";
     getComputerChoice();
     playRound(playerChoice, computerChoice);
+    alert("You picked " + playerChoice + " and the computer picked " + computerChoice );
+    gameResult()
     pScore.textContent = "Player Score is: " + playerScore;
     cScore.textContent = "Computer Score is: " + computerScore;
-    alert("You picked " + playerChoice + " and the computer picked " + computerChoice );
 })
 
 const paperButton = document.createElement("button");
@@ -144,4 +159,6 @@ scissorsButton.addEventListener("click", () => {
     cScore.textContent = "Computer Score is: " + computerScore;
     alert("You picked " + playerChoice + " and the computer picked " + computerChoice );
 })
+
+
 
