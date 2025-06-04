@@ -116,6 +116,7 @@ rockButton.addEventListener("click", () => {
     playRound(playerChoice, computerChoice);
     pScore.textContent = "Player Score is: " + playerScore;
     cScore.textContent = "Computer Score is: " + computerScore;
+    alert("You picked " + playerChoice + " and the computer picked " + computerChoice );
 })
 
 const paperButton = document.createElement("button");
@@ -128,6 +129,7 @@ paperButton.addEventListener("click", () => {
     playRound(playerChoice, computerChoice);
     pScore.textContent = "Player Score is: " + playerScore;
     cScore.textContent = "Computer Score is: " + computerScore;
+    alert("You picked " + playerChoice + " and the computer picked " + computerChoice );
 })
 
 const scissorsButton = document.createElement("button");
@@ -140,5 +142,6 @@ scissorsButton.addEventListener("click", () => {
     playRound(playerChoice, computerChoice);
     pScore.textContent = "Player Score is: " + playerScore;
     cScore.textContent = "Computer Score is: " + computerScore;
+    alert("You picked " + playerChoice + " and the computer picked " + computerChoice );
 })
 
