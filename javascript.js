@@ -112,12 +112,8 @@ document.body.appendChild(rockButton);
 
 rockButton.addEventListener("click", () => {
     playerChoice = "rock";
-    console.log(playerChoice);
     getComputerChoice();
-    console.log(computerChoice);
     playRound(playerChoice, computerChoice);
-    console.log(playerScore);
-    console.log(computerScore);
     pScore.textContent = "Player Score is: " + playerScore;
     cScore.textContent = "Computer Score is: " + computerScore;
 })
@@ -126,7 +122,23 @@ const paperButton = document.createElement("button");
 paperButton.textContent = "Paper";
 document.body.appendChild(paperButton);
 
+paperButton.addEventListener("click", () => {
+    playerChoice = "paper";
+    getComputerChoice();
+    playRound(playerChoice, computerChoice);
+    pScore.textContent = "Player Score is: " + playerScore;
+    cScore.textContent = "Computer Score is: " + computerScore;
+})
+
 const scissorsButton = document.createElement("button");
 scissorsButton.textContent = "Scissors";
 document.body.appendChild(scissorsButton);
+
+scissorsButton.addEventListener("click", () => {
+    playerChoice = "scissors";
+    getComputerChoice();
+    playRound(playerChoice, computerChoice);
+    pScore.textContent = "Player Score is: " + playerScore;
+    cScore.textContent = "Computer Score is: " + computerScore;
+})
 
