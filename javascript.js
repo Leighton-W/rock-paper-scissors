@@ -96,6 +96,9 @@ Pseudocode
 - compares the results to declare a winner
 */
 
+const pScore = document.createElement("p");
+pScore.textContent = playerScore;
+score.appendChild(pScore);
 
 const rockButton = document.createElement("button");
 rockButton.textContent = "Rock";
@@ -118,3 +121,7 @@ document.body.appendChild(paperButton);
 const scissorsButton = document.createElement("button");
 scissorsButton.textContent = "Scissors";
 document.body.appendChild(scissorsButton);
+
+const score = document.createElement("div");
+document.body.appendChild(score);
+
