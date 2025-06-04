@@ -96,9 +96,15 @@ Pseudocode
 - compares the results to declare a winner
 */
 
+const score = document.createElement("div");
+document.body.appendChild(score);
+
 const pScore = document.createElement("p");
-pScore.textContent = playerScore;
+pScore.textContent = "Player Score is: " + playerScore;
 score.appendChild(pScore);
+const cScore = document.createElement("p");
+cScore.textContent = "Computer Score is: " + computerScore;
+score.appendChild(cScore);
 
 const rockButton = document.createElement("button");
 rockButton.textContent = "Rock";
@@ -112,6 +118,8 @@ rockButton.addEventListener("click", () => {
     playRound(playerChoice, computerChoice);
     console.log(playerScore);
     console.log(computerScore);
+    pScore.textContent = "Player Score is: " + playerScore;
+    cScore.textContent = "Computer Score is: " + computerScore;
 })
 
 const paperButton = document.createElement("button");
@@ -121,7 +129,4 @@ document.body.appendChild(paperButton);
 const scissorsButton = document.createElement("button");
 scissorsButton.textContent = "Scissors";
 document.body.appendChild(scissorsButton);
-
-const score = document.createElement("div");
-document.body.appendChild(score);
 
